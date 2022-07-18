@@ -10,9 +10,17 @@
     font-family: 'Manrope', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 .tag{
     font-family: 'Bebas Neue', cursive;
-    @include text (2.3rem, 400, 1.9, $orange);
+    @include text (2.3rem, 400, 1.9rem, $orange);
+}
+
+.orange_text{
+    color: $orange;
 }
 
 a{
@@ -24,20 +32,27 @@ a{
     }
 }
 
+h1{
+    @include text (5.3rem, 800, 6.4rem, white);
+}
+
 .header {
     &::after{
-    display: block;
-    margin: 0 auto;
-    min-height: 80rem;
-    width: 100%;
-    background-image: url(../img/backgrd.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    z-index: -1;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        min-height: 80rem;
+        width: 144.2rem;
+        background-image: url(../img/backgrd.svg);
+        // background-size: contain;
+        background-repeat: no-repeat;
+        // position: absolute;
+        // top: 0;
+        z-index: -1;
+        margin-top: -815px;
     }
-    
+
+ 
 
     .nav {
         display: flex;
@@ -60,7 +75,7 @@ a{
             background-color: transparent;
             border: 0.1rem solid $darkgrey; 
             margin-left: 2.0rem;
-            @include text (16px, 700, 1.8rem, white);
+            @include text (1.6rem, 700, 1.8rem, white);
             height: 40px;
             padding-left: 1.4rem;
             padding-right: 1.4rem;
@@ -71,4 +86,11 @@ a{
             }
         }
     }
-}
+
+
+    }
+
+  
+
+
+
