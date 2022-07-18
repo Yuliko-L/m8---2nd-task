@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.tag {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #FF6421;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8rem;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.header::after {
+  display: block;
+  margin: 0 auto;
+  min-height: 80rem;
+  width: 100%;
+  background-image: url(../img/backgrd.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: 8.8rem;
+}
+.header .nav__menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0;
+}
+.header .nav__btn {
+  border-radius: 0.8rem;
+  background-color: transparent;
+  border: 0.1rem solid #DFDFE7;
+  margin-left: 2rem;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8rem;
+  color: white;
+  height: 40px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.header .nav__btn--orange {
+  border: 0.1rem solid #FF6421;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8rem;
+  color: #FF6421;
+}/*# sourceMappingURL=style.css.map */
